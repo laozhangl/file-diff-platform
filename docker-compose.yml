@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  file-diff-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: file-diff-platform
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
