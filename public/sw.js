@@ -1,10 +1,10 @@
 // 文件比对平台 Service Worker - 离线缓存
 const CACHE_NAME = 'file-diff-v1'
 const ASSETS = [
-  './',
-  './index.html',
-  './manifest.json',
-  './icon.svg',
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/icon.svg',
 ]
 
 self.addEventListener('install', (event) => {
